@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form action="" method="get">
+<form action="register.php" method="get">
     <table border="5">
         <tr>
             <td colspan="2" class="">
