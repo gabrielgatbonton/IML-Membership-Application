@@ -11,9 +11,101 @@
 <body>
 
 <form action="" method="get">
-    <table>
+    <table border="5">
         <tr>
+            <td colspan="2" class="">
+                <img src="images/Transparent Car Club Logo.png" alt="Club logo" class="resize">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h5 class="center">Club Registration Form</h5>
+                <p class="center">Complete the form below to sign up for our membership perks.</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="fname">Name</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="fname" id="fname">
+            </td>
+            <td>
+                <input type="text" name="lname">
+            </td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
             
+        </tr>
+        <tr>
+            <td colspan="2"><br></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="email">E-Mail</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><br></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="area">Phone Number:</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="area" id="area">
+            </td>
+            <td>
+                <input type="number" name="phoneNumber">
+            </td>
+        </tr>
+        <tr>
+            <td>Area Code</td>
+            <td>Phone Number</td>
+        </tr>
+        <tr>
+            <td colspan="2"><br></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="address">Address:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" name="address1" id="address">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Street Address
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" name="address2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Street Address Line 2
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="submit">
+            </td>
         </tr>
     </table>
 </form>
