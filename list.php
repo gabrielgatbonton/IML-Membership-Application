@@ -37,7 +37,8 @@ else{
             <td><?php echo $rows['areaCode'];?></td>
 			<td><?php echo $rows['phoneNumber'];?></td>
 			<td><?php echo $rows['address1'];?></td>
-            <td><?php echo $rows['address2'];}?></td>
+            <td><?php echo $rows['address2'];?></td>
+            <td><?php echo "<a type='button' class='btn btn-danger' href='delete.php?id=$rows[id]'>Delete</a>";}?></td>
 
         </tr>
     </table>
