@@ -103,8 +103,11 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td>
                 <input type="submit" value="submit">
+            </td>
+            <td>
+                <a href="list.php">Click</a>
             </td>
         </tr>
     </table>
