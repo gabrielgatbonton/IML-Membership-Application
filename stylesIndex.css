@@ -3,13 +3,29 @@
 }
 
 body{
-    background-image: url('images/Car Wallpaper.jpg');
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    
 }
 
 table{
     margin-left: auto;
     margin-right: auto;
+}
+img.resize{
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+td.mergeColumn{
+    column-span: 2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
