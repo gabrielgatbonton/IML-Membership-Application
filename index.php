@@ -28,16 +28,16 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="stretch">
                 <input type="text" name="fname" id="fname">
             </td>
-            <td>
-                <input type="text" name="lname">
+            <td class="stretch">
+                <input type="text" name="lname" id="lname">
             </td>
         </tr>
         <tr>
-            <td>First Name</td>
-            <td>Last Name</td>
+            <td><label for="fname">First Name</label></td>
+            <td><label for="lname">Last Name</label></td>
             
         </tr>
         <tr>
@@ -49,7 +49,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="2" class="stretch">
                 <input type="email" name="email" id="email">
             </td>
         </tr>
@@ -62,16 +62,16 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td class="stretch">
                 <input type="number" name="area" id="area">
             </td>
-            <td>
-                <input type="number" name="phoneNumber">
+            <td class="stretch">
+                <input type="number" name="phoneNumber" id="phoneNumber">
             </td>
         </tr>
         <tr>
-            <td>Area Code</td>
-            <td>Phone Number</td>
+            <td><label for="area">Area Code</label></td>
+            <td><label for="phoneNumber">Phone Number</label></td>
         </tr>
         <tr>
             <td colspan="2"><br></td>
@@ -82,31 +82,34 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="2" class="stretch">
                 <input type="text" name="address1" id="address">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                Street Address
+                <label for="address">Street Address</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="stretch">
+                <input type="text" name="address2" id="address2">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="text" name="address2">
+                <label for="address2">Street Address Line 2</label>
             </td>
         </tr>
         <tr>
-            <td colspan="2">
-                Street Address Line 2
-            </td>
+            <td colspan="2"><br></td>
         </tr>
         <tr>
-            <td>
-                <input type="submit" value="submit">
+            <td class="center">
+                <input class='btn btn-danger' type="submit" value="Submit">
             </td>
-            <td>
-                <a href="list.php">Click</a>
+            <td class="center">
+                <a type='button' class='btn btn-light' href="list.php">See the list</a>
             </td>
         </tr>
     </table>
