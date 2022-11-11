@@ -93,7 +93,7 @@
         </tr>
         <tr>
             <td colspan="2" class="stretch">
-                <input type="text" name="address2" id="address2" required>
+                <input type="text" name="address2" id="address2">
             </td>
         </tr>
         <tr>
