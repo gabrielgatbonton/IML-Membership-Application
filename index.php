@@ -29,10 +29,10 @@
         </tr>
         <tr>
             <td class="stretch">
-                <input type="text" name="fname" id="fname">
+                <input type="text" name="fname" id="fname" required>
             </td>
             <td class="stretch">
-                <input type="text" name="lname" id="lname">
+                <input type="text" name="lname" id="lname" required>
             </td>
         </tr>
         <tr>
@@ -50,7 +50,7 @@
         </tr>
         <tr>
             <td colspan="2" class="stretch">
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </td>
         </tr>
         <tr>
@@ -58,15 +58,15 @@
         </tr>
         <tr>
             <td colspan="2">
-                <label for="area">Phone Number:</label>
+                <label for="area">Contact Details:</label>
             </td>
         </tr>
         <tr>
             <td class="stretch">
-                <input type="number" name="area" id="area">
+                <input type="number" name="area" id="area" required>
             </td>
             <td class="stretch">
-                <input type="number" name="phoneNumber" id="phoneNumber">
+                <input type="number" name="phoneNumber" id="phoneNumber" required>
             </td>
         </tr>
         <tr>
@@ -83,7 +83,7 @@
         </tr>
         <tr>
             <td colspan="2" class="stretch">
-                <input type="text" name="address1" id="address">
+                <input type="text" name="address1" id="address" required>
             </td>
         </tr>
         <tr>
@@ -93,7 +93,7 @@
         </tr>
         <tr>
             <td colspan="2" class="stretch">
-                <input type="text" name="address2" id="address2">
+                <input type="text" name="address2" id="address2" required>
             </td>
         </tr>
         <tr>
