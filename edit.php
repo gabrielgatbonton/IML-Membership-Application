@@ -50,7 +50,7 @@
         </tr>
         <tr>
             <td colspan="2" class="stretch">
-                <input type="email" name="email" value="<?php echo $_GET['email'] ;?>">
+                <input type="email" name="email" id="email" value="<?php echo $_GET['email'] ;?>">
             </td>
         </tr>
         <tr>
