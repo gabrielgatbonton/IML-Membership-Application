@@ -21,36 +21,33 @@ else{
         .center{
             text-align: center;
         }
-        body{
-
-        }
     </style>
 </head>
 <body>
 <table class="table table-striped table table-hover">
     <thead class="table-dark">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Postal/Zip Code</th>
-            <th>Phone Number</th>
-            <th>Street Address</th>
-            <th>Street Address Line 2</th>
-            <th colspan="2">Action</th>
+            <th class="center">First Name</th>
+            <th class="center">Last Name</th>
+            <th class="center">Email</th>
+            <th class="center">Postal/Zip Code</th>
+            <th class="center">Phone Number</th>
+            <th class="center">Street Address</th>
+            <th class="center">Street Address Line 2</th>
+            <th colspan="2" class="center">Action</th>
         </tr>
     </thead>
         <?php while($rows = mysqli_fetch_array($result)){?>
         <tr>
-			<td><?php echo $rows['fname'];?></td>
-			<td><?php echo $rows['lname'];?></td>
-			<td><?php echo $rows['email'];?></td>
-            <td><?php echo $rows['areaCode'];?></td>
-			<td><?php echo $rows['phoneNumber'];?></td>
-			<td><?php echo $rows['address1'];?></td>
-            <td><?php echo $rows['address2'];?></td>
-            <td><?php echo "<a type='button' class='btn btn-light' href='edit.php?id=$rows[id]&lname=$rows[lname]&fname=$rows[fname]&email=$rows[email]&areaCode=$rows[areaCode]&phoneNumber=$rows[phoneNumber]&address1=$rows[address1]&address2=$rows[address2]'>Edit</a>";?></td>
-            <td><?php echo "<a type='button' class='btn btn-danger' href='delete.php?id=$rows[id]'>Delete</a>";}?></td>
+			<td class="center"><?php echo $rows['fname'];?></td>
+			<td class="center"><?php echo $rows['lname'];?></td>
+			<td class="center"><?php echo $rows['email'];?></td>
+            <td class="center"><?php echo $rows['areaCode'];?></td>
+			<td class="center"><?php echo $rows['phoneNumber'];?></td>
+			<td class="center"><?php echo $rows['address1'];?></td>
+            <td class="center"><?php echo $rows['address2'];?></td>
+            <td class="center"><?php echo "<a type='button' class='btn btn-light' href='edit.php?id=$rows[id]&lname=$rows[lname]&fname=$rows[fname]&email=$rows[email]&areaCode=$rows[areaCode]&phoneNumber=$rows[phoneNumber]&address1=$rows[address1]&address2=$rows[address2]'>Edit</a>";?></td>
+            <td class="center"><?php echo "<a type='button' class='btn btn-danger' href='delete.php?id=$rows[id]'>Delete</a>";}?></td>
         </tr>
     </table>
     <div class="center"><a class="btn btn-warning" href="index.php">Create Again!</a></div>
