@@ -13,7 +13,7 @@
         <form action="update.php" method="get">
         <tr>
             <td colspan="2" class="">
-                <img src="images/Transparent Car Club Logo.png" alt="Club logo" class="resize">
+                <a href="index.php"><img src="images/Transparent Car Club Logo.png" alt="Club logo" class="resize"></a>
             </td>
         </tr>
         <tr>
