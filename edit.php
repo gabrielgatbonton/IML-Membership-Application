@@ -30,11 +30,6 @@
                 <td><input type="text" name="address2" value="<?php echo $_GET['address2'] ;?>"></td>
             </tr>
             <tr>
-                <td colspan="7">
-                    <br>
-                </td>
-            </tr>
-            <tr>
                 <td><input class="btn btn-danger" type="submit" value="Update"></td>
                 <td><a class="btn btn-light" href="list.php">Back to List</a></td>
             </tr>
