@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'connection.php';
 
 if(!$conn){
@@ -25,6 +26,7 @@ else{
     </style>
 </head>
 <body>
+<?php include('message.php'); ?>
 <table class="table table-striped table table-hover">
     <thead class="table-dark">
         <tr>

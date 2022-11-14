@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'connection.php';
 
 if(!$conn){
@@ -9,11 +10,16 @@ else{
 
     $sql = "DELETE FROM information WHERE id = '$id'";
 
-    if(mysqli_query($conn, $sql)){
-        header("location: list.php");
+    $query_run = mysqli_query($conn, $sql);
+    if($query_run){
+        $_SESSION['message'] = "Student Deleted Successfully";
+        header("Location: list.php");
+        exit(0);
     }
     else{
-        echo "Delete Failed!";
+        $_SESSION['message'] = "Student Data Failed to be Deleted";
+        header("Location: list.php");
+        exit(0);
     }
 }
 ?>

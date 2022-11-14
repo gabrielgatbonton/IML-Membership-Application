@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'connection.php';
 
 if(!$conn){
@@ -16,10 +17,15 @@ else{
 
     $sql = "UPDATE information SET fname = '$fname', lname = '$lname', email = '$email', areaCode = '$areaCode', phoneNumber = '$phoneNumber' , address1 = '$address1', address2 = '$address2' WHERE id = '$id'";
 
-    if(mysqli_query($conn, $sql)){
-        header("location:list.php");
+    $query_run = mysqli_query($conn, $sql);
+    if($query_run){
+        $_SESSION['message'] = "Student Updated Successfully";
+        header("Location: list.php");
+        exit(0);
     }
     else{
-        echo "Unsuccessful";
+        $_SESSION['message'] = "Student Data Failed to be Updated";
+        header("Location: list.php");
+        exit(0);
     }
 }

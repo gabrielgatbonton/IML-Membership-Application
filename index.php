@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +13,7 @@
 </head>
 <body>
 <form action="register.php" method="get">
+    <?php include('message.php'); ?>
     <table class="p-3 mb-2 bg-dark text-white" style="--bs-bg-opacity: .85;">
         <tr>
             <td colspan="2" class="">
